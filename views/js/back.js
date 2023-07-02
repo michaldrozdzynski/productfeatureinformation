@@ -12,7 +12,7 @@ function handleFeatureNameChange() {
     data: {
       name: value,
     },
-    url:  '/module/productfeatureinformation/ajax?name=' + value,
+    url:  baseDir + 'module/productfeatureinformation/ajax',
     success: function(data) {
       var options = "";
       for (var i = 0; i < data.selected.length; i++) {
